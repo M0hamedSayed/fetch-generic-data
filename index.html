@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table with Generic Data</h2>
+    <table class="task1"></table>
+    <h2>Table with Specific Data</h2>
+
+    <table class="data">
+        <tr>
+            <th>No.</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th colspan="2">Address</th>
+            <th>Posts</th>
+            <th>Comments</th>
+        </tr>
+    </table>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
